@@ -23,34 +23,36 @@ const ColorButton = withStyles((theme) => ({
 
 const ShowLabStatus = () => {
   return (
-    <div className="labstatus_area">
-      <div className="labstatus_title">
-        <img src={door} alt={door} />
-        <h1>랩실 신청 현황</h1>
-      </div>
-      <div className="labstatus_center">
-        <div className="labstatus_line"></div>
-        <div className="useable_area">
-          <div className="useable_lab">
-            <p className="useable_status">사용 가능 랩실</p>
-            <p className="useable_count">7/14</p>
+    <FadeIn delay={200}>
+      <div className="labstatus_area">
+        <div className="labstatus_title">
+          <img src={door} alt={door} />
+          <h1>랩실 신청 현황</h1>
+        </div>
+        <div className="labstatus_center">
+          <div className="labstatus_line"></div>
+          <div className="useable_area">
+            <div className="useable_lab">
+              <p className="useable_status">사용 가능 랩실</p>
+              <p className="useable_count">7/14</p>
+            </div>
+            <div className="useable_lab">
+              <p className="useable_status">사용중인 랩실</p>
+              <p className="useable_count">7/14</p>
+            </div>
           </div>
-          <div className="useable_lab">
-            <p className="useable_status">사용중인 랩실</p>
-            <p className="useable_count">7/14</p>
+          <div className="unusable_chart">
+            <div className="useable_chart"></div>
           </div>
         </div>
-        <div className="unusable_chart">
-          <div className="useable_chart"></div>
+        <div className="lab_button_area">
+          <ColorButton variant="contained" onClick={() => {}}>
+            랩실 신청하기
+            <img src={arrow} alt={arrow} />
+          </ColorButton>
         </div>
       </div>
-      <div className="lab_button_area">
-        <ColorButton variant="contained" onClick={() => {}}>
-          랩실 신청하기
-          <img src={arrow} alt={arrow} />
-        </ColorButton>
-      </div>
-    </div>
+    </FadeIn>
   );
 };
 

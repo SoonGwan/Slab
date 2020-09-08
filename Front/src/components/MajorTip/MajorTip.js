@@ -4,6 +4,7 @@ import message from "assets/images/message.png";
 import arrow from "assets/images/arrow.svg";
 
 import { Button, withStyles } from "@material-ui/core";
+import FadeIn from "react-fade-in";
 
 const ColorButton = withStyles((theme) => ({
   root: {
@@ -21,7 +22,7 @@ const ColorButton = withStyles((theme) => ({
 
 const MajorTip = () => {
   return (
-    <>
+    <FadeIn delay={300}>
       <div className="MajorTip">
         <div className="MajorTip-LabTitle">
           <div className="MajorTip-LabTitle-Area">
@@ -120,7 +121,7 @@ const MajorTip = () => {
           <hr />
         </div>
       </div>
-    </>
+    </FadeIn>
   );
 };
 

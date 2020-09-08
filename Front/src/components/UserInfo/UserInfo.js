@@ -3,6 +3,7 @@ import "./UserInfo.scss";
 import pencil from "assets/images/pencil.svg";
 import money from "assets/images/money.svg";
 import { DonutChart } from "@opd/g2plot-react";
+import FadeIn from "react-fade-in";
 
 const data = [
   {
@@ -35,7 +36,7 @@ const UserInfo = () => {
   const chartRef = useRef();
 
   return (
-    <>
+    <FadeIn delay={300}>
       <div className="UserInfo">
         <div className="UserInfo-Title">
           안녕하세요, <b>곽준환</b> 님
@@ -67,7 +68,7 @@ const UserInfo = () => {
           <DonutChart {...config} chartRef={chartRef} />
         </div>
       </div>
-    </>
+    </FadeIn>
   );
 };
 
