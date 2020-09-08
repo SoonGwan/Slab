@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1090" height="1081" viewBox="0 0 1090 1081">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1.131" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e1eeff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="사각형_153" x="352" y="520" width="91" height="75" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.02"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_154" x="509" y="563" width="83" height="62" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.02"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="background" transform="translate(-830)">
+    <rect id="background-2" data-name="background" width="1090" height="1081" transform="translate(830)" fill="#f8fbff"/>
+    <rect id="floor" width="1090" height="308" transform="translate(830 772)" fill="url(#linear-gradient)"/>
+    <ellipse id="shadow" cx="269" cy="34" rx="269" ry="34" transform="translate(904 815)" fill="#e1ecfb"/>
+    <g id="sitting" transform="translate(933.112 398.834)">
+      <g id="Bottom_Skinny_Jeans_1" data-name="Bottom/Skinny Jeans 1" transform="translate(34.575 224.508)">
+        <g id="Seat" transform="translate(0 54.561)">
+          <path id="Seat-2" data-name="Seat" d="M170.177,161.084H20.785A20.785,20.785,0,0,1,0,140.3V20.785A20.785,20.785,0,0,1,20.785,0H170.177a20.785,20.785,0,0,1,20.785,20.785V140.3A20.785,20.785,0,0,1,170.177,161.084ZM41.57,36.374a5.2,5.2,0,0,0-5.2,5.2v77.944a5.2,5.2,0,0,0,5.2,5.2H149.392a5.2,5.2,0,0,0,5.2-5.2V41.57a5.2,5.2,0,0,0-5.2-5.2Z" fill="#a4c2e5"/>
+        </g>
+        <path id="Skin" d="M164.425,83.678c-8.272-28.978-14.566-54.477-16.156-64C144.475-3.032,177.446-4.356,181.8,6.931c6.6,17.081,18.113,73.2,31.949,157.974l-15.816,4.614C181.3,132.681,169.257,100.6,164.425,83.678ZM4.871,53.911c15.272-6.037,68.752-24.928,94.544-30.268,7.412-1.537,14.6-2.963,21.35-4.252,20.076-3.832,30.476,32.384,11.141,35.167C83.754,61.482,15.49,68.639,9.649,69.443a7.435,7.435,0,0,1-1.012.07C.973,69.513-4.326,57.549,4.871,53.911Z" transform="translate(85.917 41.785)" fill="#f3dfd9"/>
+        <path id="Leg_Back" data-name="Leg Back" d="M82.828,55.508a16.888,16.888,0,0,1-.223-4.3L0,9.154V0H9.823S129.7,30.545,132.334,39.15c.018.061.035.121.049.182q.061.081.121.162c15.837,21.781,25.323,128.119,28.436,136.081L130.592,180.1C118.982,137.051,81.841,107.066,82.828,55.508Z" transform="translate(136.401)" fill="#002856"/>
+        <path id="Leg_Front" data-name="Leg Front" d="M40.371,84.735l24.95-8.558c-7.557-1.512-14.518-2.858-20.473-3.908C6.377,65.522-4.84,44.929,1.793,0H72.672c11.579,3.327,71.75,28.56,102.97,41.98,20.663,8.883,14.149,40.9,2.447,49.234a1.142,1.142,0,0,1-.65,1.015c-43.289,17.945-80.359,17.074-104.693,16.2-11.054-.39-19.486-.791-24.682.575Z" transform="translate(77.944)" fill="#003571"/>
+        <g id="Right_Shoe" data-name="Right Shoe" transform="translate(102.137 86.41) rotate(64.024)">
+          <path id="shoe" d="M5.812,6.107A2.6,2.6,0,0,0,2.479,7.858L0,16.594A83.453,83.453,0,0,0,1.169,26.849H74.436s2.858-9.442-3.3-10.2-10.224-1.36-10.224-1.36L26.865.113A1.3,1.3,0,0,0,25.134.8L22.945,6.114s-5.7,2.658-9.258,2.658Z" transform="translate(0 0)" fill="#d6d6d6"/>
+        </g>
+        <g id="Right_Shoe-2" data-name="Right Shoe" transform="translate(274.102 196.59)">
+          <path id="shoe-2" data-name="shoe" d="M5.812,6.439A2.6,2.6,0,0,0,2.479,8.19L0,16.926A83.453,83.453,0,0,0,1.169,27.181H74.436s2.858-9.442-3.3-10.2-10.224-1.36-10.224-1.36L26.865.445a1.3,1.3,0,0,0-1.73.691L22.945,6.447S17.249,9.1,13.687,9.1Z" transform="translate(0 -0.332)" fill="#d6d6d6"/>
+        </g>
+      </g>
+      <g id="Head_Front_Long" data-name="Head/Front/Long" transform="translate(126.993 0)">
+        <path id="Hair_Back" data-name="Hair Back" d="M24.834,83.168l-.012-.2A27.93,27.93,0,0,1,0,55.21V27.93A27.93,27.93,0,0,1,27.93,0h2.6A27.931,27.931,0,0,1,58.149,23.763c4.477,16.494,10.313,53.587,4.359,59.406Z" transform="translate(18.196 0)" fill="#191847"/>
+        <g id="Head" transform="translate(21.898 4.965)">
+          <path id="Head-2" data-name="Head" d="M0,94.831,10.733,44.8C4.748,37.778.7,29.167,1.373,19.518c1.949-27.8,40.65-21.684,48.177-7.653S56.184,61.49,46.456,64c-3.88,1-12.145-1.45-20.558-6.52l5.279,37.356Z" transform="translate(0 0)" fill="#f3dfd9"/>
+        </g>
+        <path id="Hair_Front" data-name="Hair Front" d="M37.829,81.239H.156A67.661,67.661,0,0,1,.368,69.453a32.4,32.4,0,0,1,1.893-8.02A30.354,30.354,0,0,1,8.9,51.612c4.642-5.118,9.442-10.411,9.442-27.057.327-.32.65-.643.969-.955.926-.916,1.8-1.778,2.673-2.559l-.042-1.011a52.437,52.437,0,0,1,6.767-10.014A34.668,34.668,0,0,1,36.54,3.131,19.331,19.331,0,0,1,46.768,0c6.7,0,11.951,1.386,16.038,4.238A31.178,31.178,0,0,1,70.6,12.93l.009.013c-2.114,7.251-8.4,10.15-15.686,13.51a85.376,85.376,0,0,0-9.492,4.874,7.145,7.145,0,1,0-4.509,12.687c.108,0,.217,0,.325-.008a143.839,143.839,0,0,1,.434,22.835c-.546,7.489-1.878,12.471-3.853,14.4Z" transform="translate(0.006 1.299)" fill="#191847"/>
+      </g>
+      <g id="Body_Long_Sleeve_1" data-name="Body/Long Sleeve 1" transform="translate(0 83.645)">
+        <path id="Skin-2" data-name="Skin" d="M42.655,114.432c-1.977-3.018-4.195-6.034-10.392-4.11-11.028,3.423-20.129,11.181-31.048,1.955-1.345-1.134-2.473-4.844,1.794-7C13.64,99.89,29.255,90.038,31.682,86.406,36.645,78.983,65.362,0,65.362,0L88.94,3.487s-37.962,83.866-40.7,88.708c-4.113,7.26.724,19.907,2.614,26.6a7.856,7.856,0,0,1-2.208.352C45.6,119.147,44.2,116.786,42.655,114.432ZM277.063,58.611l-40.728-20.7,10.981-22.9L287.5,49.7a113.479,113.479,0,0,1,27.986,13.829c1.7,1.819,3.67,5.4-3.841,4.269s-15.459-1.972-16.681.577,3.132,6.009.779,9.4a.981.981,0,0,1-.852.443Q291.261,78.216,277.063,58.611Z" transform="translate(0 105.798)" fill="#f3dfd9"/>
+        <path id="Coat_Back" data-name="Coat Back" d="M0,6.174,14.125,0C38.26,48.49,71.958,94.5,124.736,131.239l-10.3,22.435c-45.5-22.15-88.189-38.712-108.2-76.174C-.477,64.93.911,21.829,0,6.174Z" transform="translate(164.441 1.779) rotate(4.992)" fill="#d4dbe4"/>
+        <path id="Shirt" d="M0,146.794s62.772,6.777,98.817,0c2.977-.56,3.446-5.635,2.067-9.08C79.383,84.067,64.64,37.26,64.64,0,58.718,3.037,43.926.909,43.926.909,17.419,39.308,5.235,83.365,0,146.794Z" transform="translate(113.727 3.011)" fill="#323337"/>
+        <path id="Coat_Front" data-name="Coat Front" d="M30.073,292.938C32.931,232.1,54.959,159.348,77.779,97.572c-16.838,17.064-36.5,45.658-52.4,93.26L0,184.2C25.868,70.7,101.655,12.161,116.363,1.711L116.786.7H117.8c.683-.469,1.039-.7,1.039-.7L118.8.7h11.042c2.572,15.4,10.685,224,35.724,292.241Z" transform="translate(32.252)" fill="#e7eef6"/>
+      </g>
+    </g>
+    <g id="table" transform="translate(908 631.901)">
+      <path id="사각형_146" data-name="사각형 146" d="M0,0H534a0,0,0,0,1,0,0V0a18,18,0,0,1-18,18H18A18,18,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 0.099)" fill="#a7c6eb"/>
+      <path id="패스_1" data-name="패스 1" d="M1013.843,1824.441s-60.767,196.337-56.552,198.113,66.992-196.889,66.992-196.889Z" transform="translate(-954.663 -1800.553)" fill="#a7c6eb"/>
+      <path id="패스_2" data-name="패스 2" d="M1013.843,1824.441s-60.767,196.337-56.552,198.113,66.992-196.889,66.992-196.889Z" transform="translate(-561.51 -1800.553)" fill="#a7c6eb"/>
+      <path id="패스_3" data-name="패스 3" d="M967.522,1824.441s60.767,196.337,56.552,198.113-66.992-196.889-66.992-196.889Z" transform="translate(-887.176 -1800.553)" fill="#a7c6eb"/>
+      <path id="패스_4" data-name="패스 4" d="M967.522,1824.441s60.767,196.337,56.552,198.113-66.992-196.889-66.992-196.889Z" transform="translate(-494.023 -1800.553)" fill="#a7c6eb"/>
+      <path id="사각형_149" data-name="사각형 149" d="M0,0H32a0,0,0,0,1,0,0V0a7,7,0,0,1-7,7H7A7,7,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(447 18.099)" fill="#85a7ce"/>
+      <path id="사각형_148" data-name="사각형 148" d="M0,0H31a0,0,0,0,1,0,0V0a7,7,0,0,1-7,7H7A7,7,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(55 18.099)" fill="#85a7ce"/>
+    </g>
+    <g id="labtop">
+      <path id="사각형_151" data-name="사각형 151" d="M0,0H147a0,0,0,0,1,0,0V4a0,0,0,0,1,0,0H4A4,4,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1220 628)" fill="#cee1f6"/>
+      <rect id="사각형_150" data-name="사각형 150" width="123" height="76" rx="4" transform="translate(1244 556)" fill="#dde7f2"/>
+      <circle id="타원_2" data-name="타원 2" cx="7" cy="7" r="7" transform="translate(1301 591)" fill="#fff"/>
+      <circle id="타원_3" data-name="타원 3" cx="5" cy="5" r="5" transform="translate(1310 593)" fill="#dde7f2"/>
+    </g>
+    <g id="bubble">
+      <g id="bubble-2" data-name="bubble" transform="translate(18 28)">
+        <rect id="사각형_152" data-name="사각형 152" width="99" height="17" rx="6" transform="translate(1281 492)" fill="#6bb0ff"/>
+        <path id="패스_5" data-name="패스 5" d="M1281,1699.678v8.659s1.727-3.565,9.812-3.565S1281,1699.678,1281,1699.678Z" transform="translate(0 -1196)" fill="#6bb0ff"/>
+      </g>
+      <g id="bubble-3" data-name="bubble" transform="translate(-5 2)">
+        <rect id="사각형_152-2" data-name="사각형 152" width="99" height="17" rx="6" transform="translate(1281 492)" fill="#07f"/>
+        <path id="패스_5-2" data-name="패스 5" d="M1281,1699.678v8.659s1.727-3.565,9.812-3.565S1281,1699.678,1281,1699.678Z" transform="translate(0 -1196)" fill="#07f"/>
+      </g>
+      <g id="bubble-4" data-name="bubble" transform="translate(18 -24)">
+        <rect id="사각형_152-3" data-name="사각형 152" width="99" height="17" rx="6" transform="translate(1281 492)" fill="#6bb0ff"/>
+        <path id="패스_5-3" data-name="패스 5" d="M1281,1699.678v8.659s1.727-3.565,9.812-3.565S1281,1699.678,1281,1699.678Z" transform="translate(0 -1196)" fill="#6bb0ff"/>
+      </g>
+    </g>
+    <g id="chart">
+      <g transform="matrix(1, 0, 0, 1, 830, 0)" filter="url(#사각형_153)">
+        <rect id="사각형_153-2" data-name="사각형 153" width="61" height="45" rx="7" transform="translate(367 535)" fill="#fff"/>
+      </g>
+      <rect id="사각형_155" data-name="사각형 155" width="8" height="20" transform="translate(1211 554)" fill="#00a8ff"/>
+      <rect id="사각형_157" data-name="사각형 157" width="8" height="12" transform="translate(1237 562)" fill="#00a8ff"/>
+      <rect id="사각형_156" data-name="사각형 156" width="8" height="32" transform="translate(1224 542)" fill="#00a8ff"/>
+    </g>
+    <g id="sound">
+      <g transform="matrix(1, 0, 0, 1, 830, 0)" filter="url(#사각형_154)">
+        <rect id="사각형_154-2" data-name="사각형 154" width="53" height="32" rx="7" transform="translate(524 578)" fill="#fff"/>
+      </g>
+      <rect id="사각형_158" data-name="사각형 158" width="2" height="7" transform="translate(1370 591)" fill="#00a8ff"/>
+      <rect id="사각형_159" data-name="사각형 159" width="2" height="19" transform="translate(1374 585)" fill="#00a8ff"/>
+      <rect id="사각형_160" data-name="사각형 160" width="2" height="11" transform="translate(1378 589)" fill="#00a8ff"/>
+      <rect id="사각형_161" data-name="사각형 161" width="2" height="13" transform="translate(1382 588)" fill="#00a8ff"/>
+      <rect id="사각형_162" data-name="사각형 162" width="2" height="7" transform="translate(1386 591)" fill="#00a8ff"/>
+      <rect id="사각형_163" data-name="사각형 163" width="2" height="13" transform="translate(1390 588)" fill="#00a8ff"/>
+    </g>
+  </g>
+</svg>
