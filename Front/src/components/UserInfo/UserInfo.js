@@ -1,7 +1,37 @@
-import React from "react";
-import "./UserInfo.scss";
-import pencil from "assets/images/pencil.svg";
+import React, { useRef, useEffect } from 'react';
+import './UserInfo.scss';
+import pencil from 'assets/images/pencil.svg';
+import money from 'assets/images/money.svg';
+import { DonutChart } from '@opd/g2plot-react';
+const data = [
+  {
+    type: '남은 예산',
+    value: 100000,
+  },
+  {
+    type: '사용한 예산',
+    value: 200000,
+  },
+];
+const config = {
+  forceFit: true,
+  radius: 0.8,
+  padding: 'auto',
+  angleField: 'value',
+  statistic: {
+    visible: true,
+    content: {
+      value: '300000',
+      name: '총 합계',
+    },
+  },
+  colorField: 'type',
+  data,
+};
+
 const UserInfo = () => {
+  const chartRef = useRef();
+
   return (
     <>
       <div className="UserInfo">
@@ -26,6 +56,13 @@ const UserInfo = () => {
             <div className="UserInfo-Lab-TableList-Item">2020. 09. 08</div>
             <div className="UserInfo-Lab-TableList-Item">승인</div>
           </div>
+        </div>
+        <div className="UserInfo-LabTitle">
+          <img className="UserInfo-LabTitle-Icon" src={money} alt="" />
+          <div className="UserInfo-LabTitle-Title">동아리 예산 관리</div>
+        </div>
+        <div className="Budget">
+          <DonutChart {...config} chartRef={chartRef} />
         </div>
       </div>
     </>
