@@ -14,7 +14,6 @@ export default async (req: Request, res: Response) => {
         whoMade,
       },
     });
-
     logger.green('내가 신청한 랩실 가져옴');
     res.status(200).json({
       status: 200,
