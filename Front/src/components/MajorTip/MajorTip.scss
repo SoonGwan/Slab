@@ -13,6 +13,13 @@
     align-items: center;
     display: flex;
     margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-Area {
+      display: flex;
+      align-items: center;
+    }
     & > * + * {
       margin-left: 10px;
     }
@@ -23,6 +30,7 @@
     &-Title {
       font-size: 20px;
       font-weight: bold;
+      margin-left: 10px;
     }
   }
   &-Title {
