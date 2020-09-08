@@ -22,14 +22,8 @@ export default class Major extends BaseEntity {
   })
   writer: string;
 
-  @Column('text', {
-    nullable: false,
-  })
-  content: string;
-
   @Column({
     length: 255,
-    nullable: false,
   })
   type: string;
 }

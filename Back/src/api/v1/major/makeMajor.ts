@@ -7,7 +7,7 @@ export default async (req: Request, res: Response) => {
   type RequestBody = {
     title: string;
     writer: string;
-    content: string;
+    type: string;
   };
 
   const data: RequestBody = req.body;

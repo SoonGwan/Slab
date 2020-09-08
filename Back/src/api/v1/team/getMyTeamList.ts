@@ -5,7 +5,6 @@ import logger from '../../../lib/logger';
 
 export default async (req: Request, res: Response) => {
   const whoMade: string = String(req.query.whoMade);
-  console.log(whoMade);
   try {
     const teamList = getRepository(TeamList);
 
