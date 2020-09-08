@@ -1,0 +1,83 @@
+.labstatus_area {
+  width: 45rem;
+  height: 16rem;
+  border: 1px solid;
+  border-color: #e4e4e4;
+  border-radius: 0.6rem;
+}
+
+.labstatus_title {
+  display: flex;
+  align-items: center;
+  margin: 1.8rem 0 0 1.4rem;
+}
+
+.labstatus_title > img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.6rem;
+}
+
+.labstatus_title > h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.labstatus_line {
+  width: 42rem;
+  margin-top: 1rem;
+  border: 0.5px solid;
+  border-color: #e4e4e4;
+}
+
+.labstatus_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.useable_area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.8rem 0 1.8rem;
+}
+
+.useable_lab {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+}
+
+.useable_status,
+.useable_count {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.useable_status {
+  margin-right: 0.4rem;
+}
+
+.useable_count {
+  color: #8b8b8b;
+}
+
+.unusable_chart {
+  width: 42rem;
+  height: 0.8rem;
+  background-color: #ff7777;
+  border-radius: 10rem;
+}
+
+.useable_chart {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #87bfff;
+  border-radius: 10rem;
+}
+
+.lab_button_area {
+  margin: 2rem 0 0 1.4rem;
+}

@@ -1,14 +1,12 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Login from './Login';
-import Start from './Start';
-import * as Pages from '../pages';
-import StartContainer from 'container/StartContainer/StartContainer';
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import * as Pages from "../pages";
 const App = () => {
   return (
     <>
       <Switch>
         <Route exact path="/login" render={() => <Pages.StartPage />} />
+        <Route exact path="/" exact={true} render={() => <Pages.MainPage />} />
       </Switch>
     </>
   );
