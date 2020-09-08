@@ -11,12 +11,14 @@
 .auth_title {
   font-weight: 600;
   font-size: 2rem;
+  color: #00244d;
 }
 
 .auth_subtitle {
   font-weight: 300;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #00244d;
 }
 
 .auth_findPwd {
@@ -57,8 +59,4 @@
   width: 60rem;
   flex-direction: column;
   justify-content: center;
-}
-
-.auth_background {
-  height: 100vh;
 }
