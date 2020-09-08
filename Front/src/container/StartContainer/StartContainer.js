@@ -4,6 +4,7 @@ import useStores from 'lib/useStores';
 import Login from 'components/Login';
 import Swal from 'sweetalert2';
 import Start from 'components/Start';
+import { useHistory } from 'react-router-dom';
 
 const StartContainer = observer(() => {
   const { store } = useStores();
@@ -14,7 +15,7 @@ const StartContainer = observer(() => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [buttonClick, setButtonClick] = useState(false);
-
+  const history = useHistory();
   const requestHandleLogin = useCallback(async () => {
     const data = {
       id,
@@ -22,14 +23,16 @@ const StartContainer = observer(() => {
     };
     try {
       const response = await handleLogin(data);
-      console.log(response);
+      console.log(response.data['x-access-token']);
       if (response.status === 200) {
         Swal.fire({
           title: '성공',
           text: '로그인에 성공했어요!',
-          icons: 'success',
+          icon: 'success',
         });
       }
+      sessionStorage.setItem('token', response.data['x-access-token']);
+      history.push('/');
     } catch (error) {
       return error;
     }
