@@ -9,10 +9,16 @@ export default async (req: Request, res: Response) => {
 
   try {
     const userInfo = await verifyToken(token.toString());
+    let id = userInfo.id;
+    const userlist = await getRepository(User);
+    const list = await userlist.findOne({
+      where: {
+        id,
+      },
+    });
+
     logger.green('유저 정보 조회 성공');
-    res
-      .status(200)
-      .json({ status: 200, message: '조회성공', data: { userInfo } });
+    res.status(200).json({ status: 200, message: '조회성공', data: { list } });
   } catch (error) {
     logger.red('로그인 오류 설마 이게 ?', error.message);
     res.status(500).json({
