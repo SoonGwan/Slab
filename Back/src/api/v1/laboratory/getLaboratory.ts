@@ -4,12 +4,12 @@ import Laboratory from '../../../entity/Laboratory';
 import logger from '../../../lib/logger';
 
 export default async (req: Request, res: Response) => {
+  const isHave: number = Number(req.query.idx);
+  console.log(isHave);
   try {
     const laboratoryList = getRepository(Laboratory);
     const list = await laboratoryList.find({
-      order: {
-        idx: 'DESC',
-      },
+      where: { isHave },
     });
     logger.green('랩실 조회 성공');
     res.status(200).json({
