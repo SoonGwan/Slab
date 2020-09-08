@@ -46,13 +46,20 @@
       justify-content: space-between;
 
       &-Item {
-        width: 70px;
+        width: 100px;
         font-size: 15px;
         text-align: center;
       }
     }
     &-TableList {
       padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &-Item {
+        text-align: center;
+        width: 100px;
+      }
     }
   }
 }
