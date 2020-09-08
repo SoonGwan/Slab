@@ -1,7 +1,7 @@
-import LoginStore from './Login/LoginStore';
+import StartStore from './Start/StartStore';
 
 const stores = {
-  LoginStore: new LoginStore(),
+  StartStore: new StartStore(),
 };
 
 export default stores;

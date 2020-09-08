@@ -1,44 +1,57 @@
-import React from "react";
-import "./Register.scss";
+import React from 'react';
+import './Register.scss';
 
-import { Button, TextField, withStyles } from "@material-ui/core";
-import FadeIn from "react-fade-in";
+import { Button, TextField, withStyles } from '@material-ui/core';
+import FadeIn from 'react-fade-in';
 
 const ColorButton = withStyles((theme) => ({
   root: {
-    boxShadow: "none",
-    color: theme.palette.getContrastText("#0077FF"),
+    boxShadow: 'none',
+    color: theme.palette.getContrastText('#0077FF'),
     fontWeight: 300,
-    backgroundColor: "#0077FF",
-    width: "26rem",
-    marginTop: "2rem",
-    marginBottom: "1rem",
-    "&:hover": {
-      boxShadow: "none",
-      backgroundColor: "#0077FF",
+    backgroundColor: '#0077FF',
+    width: '26rem',
+    marginTop: '2rem',
+    marginBottom: '1rem',
+    '&:hover': {
+      boxShadow: 'none',
+      backgroundColor: '#0077FF',
     },
   },
 }))(Button);
 
 const CssTextField = withStyles({
   root: {
-    width: "26rem",
-    marginBottom: "1.6rem",
-    "& label.Mui-focused": {
-      color: "#0077FF",
+    width: '26rem',
+    marginBottom: '1.6rem',
+    '& label.Mui-focused': {
+      color: '#0077FF',
     },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#0077FF",
+    '& .MuiInput-underline:after': {
+      borderBottomColor: '#0077FF',
     },
-    "& .MuiOutlinedInput-root": {
-      "&.Mui-focused fieldset": {
-        borderColor: "#0077FF",
+    '& .MuiOutlinedInput-root': {
+      '&.Mui-focused fieldset': {
+        borderColor: '#0077FF',
       },
     },
   },
 })(TextField);
 
-const Register = ({ setButtonClick }) => {
+const Register = ({
+  setButtonClick,
+  id,
+  setId,
+  pw,
+  setPw,
+  email,
+  setEmail,
+  requestHandleRegister,
+  name,
+  setName,
+  rePw,
+  setRePw,
+}) => {
   return (
     <div className="register_main">
       <div className="register_information">
@@ -52,37 +65,43 @@ const Register = ({ setButtonClick }) => {
               label="아이디"
               variant="outlined"
               size="small"
-              onChange={(e) => {
-                console.log(e.target.value);
-              }}
+              value={id}
+              onChange={(e) => setId(e.target.value)}
             />
             <CssTextField
               label="이메일"
               variant="outlined"
               size="small"
-              onChange={(e) => {
-                console.log(e.target.value);
-              }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <CssTextField
+              label="이름"
+              variant="outlined"
+              size="small"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <CssTextField
               label="비밀번호"
               variant="outlined"
               type="password"
               size="small"
-              onChange={(e) => {
-                console.log(e.target.value);
-              }}
+              value={pw}
+              onChange={(e) => setPw(e.target.value)}
             />
             <CssTextField
               label="비밀번호 확인"
               variant="outlined"
               type="password"
               size="small"
-              onChange={(e) => {
-                console.log(e.target.value);
-              }}
+              value={rePw}
+              onChange={(e) => setRePw(e.target.value)}
             />
-            <ColorButton variant="contained" onClick={() => {}}>
+            <ColorButton
+              variant="contained"
+              onClick={() => requestHandleRegister()}
+            >
               완료
             </ColorButton>
             <div className="detach_line"></div>
