@@ -1,31 +1,33 @@
-import React, { useRef, useEffect } from 'react';
-import './UserInfo.scss';
-import pencil from 'assets/images/pencil.svg';
-import money from 'assets/images/money.svg';
-import { DonutChart } from '@opd/g2plot-react';
+import React, { useRef, useEffect } from "react";
+import "./UserInfo.scss";
+import pencil from "assets/images/pencil.svg";
+import money from "assets/images/money.svg";
+import { DonutChart } from "@opd/g2plot-react";
+
 const data = [
   {
-    type: '남은 예산',
+    type: "남은 예산",
     value: 100000,
   },
   {
-    type: '사용한 예산',
+    type: "사용한 예산",
     value: 200000,
   },
 ];
+
 const config = {
   forceFit: true,
   radius: 0.8,
-  padding: 'auto',
-  angleField: 'value',
+  padding: "auto",
+  angleField: "value",
   statistic: {
     visible: true,
     content: {
-      value: '300000',
-      name: '총 합계',
+      value: "300000",
+      name: "총 합계",
     },
   },
-  colorField: 'type',
+  colorField: "type",
   data,
 };
 

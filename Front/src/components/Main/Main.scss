@@ -1,0 +1,16 @@
+.Main {
+  display: flex;
+  width: 1280px;
+  margin: auto;
+  margin-top: 34px;
+  margin-bottom: 68px;
+  justify-content: space-around;
+
+  &-Content {
+    display: flex;
+    flex-direction: column;
+    & > * + * {
+      margin-top: 34px;
+    }
+  }
+}
