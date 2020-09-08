@@ -3,7 +3,7 @@ import { SERVER } from "config/config.json";
 
 class MajorTipRepository {
   Major = async () => {
-    const { data } = await axios.get(`${SERVER}/laboratory/major/getmajor`);
+    const { data } = await axios.get(`${SERVER}/major/getmajor`);
 
     return data;
   };

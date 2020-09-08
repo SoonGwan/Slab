@@ -20,7 +20,8 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
-const MajorTip = () => {
+const MajorTip = ({ data }) => {
+  console.log(data);
   return (
     <FadeIn delay={300}>
       <div className="MajorTip">
@@ -35,90 +36,19 @@ const MajorTip = () => {
           </ColorButton>
         </div>
         <div className="MajorTip-Lab">
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
-          <div className="MajorTip-Lab-TableList">
-            <div className="MajorTip-Lab-TableList-Item">
-              임베에 떨어질 시 대처 요령
-            </div>
-            <div className="MajorTip-Lab-TableList-Name">곽준환</div>
-          </div>
-          <hr />
+          {data.map((tip, index) => {
+            return (
+              <>
+                <div className="MajorTip-Lab-TableList">
+                  <div className="MajorTip-Lab-TableList-Item">{tip.title}</div>
+                  <div className="MajorTip-Lab-TableList-Name">
+                    {tip.writer}
+                  </div>
+                </div>
+                <hr />
+              </>
+            );
+          })}
         </div>
       </div>
     </FadeIn>
