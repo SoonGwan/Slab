@@ -4,6 +4,7 @@ import {
   PrimaryColumn,
   BaseEntity,
   PrimaryGeneratedColumn,
+  CreateDateColumn,
 } from 'typeorm';
 @Entity('Laboratory')
 export default class Laboratory extends BaseEntity {
@@ -21,4 +22,20 @@ export default class Laboratory extends BaseEntity {
     nullable: false,
   })
   labName: string;
+
+  @Column({
+    nullable: false,
+  })
+  date: string;
+
+  @Column({
+    nullable: false,
+  })
+  isHave: string;
+
+  @Column({
+    length: 255,
+    nullable: false,
+  })
+  whoMade: string;
 }
