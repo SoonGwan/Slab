@@ -1,16 +1,16 @@
 import React from "react";
 import "./Main.scss";
-import ShowLabStatus from "components/ShowLabStatus";
 import UserInfo from "components/UserInfo/UserInfo";
-import MajorTip from "components/MajorTip";
 import ImageSlider from "components/ImgaeSlider/ImageSlider";
+import ShowLabStatusContainer from "container/ShowLabStatusContainer/ShowLabStatusContainer";
+import MajorTipContainer from "container/MajorTipContainer/MajorTipContainer";
 
 const Main = () => {
   return (
     <div className="Main">
       <div className="Main-Content">
-        <ShowLabStatus />
-        <MajorTip />
+        <ShowLabStatusContainer />
+        <MajorTipContainer />
         <ImageSlider />
       </div>
       <UserInfo />

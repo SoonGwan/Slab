@@ -21,7 +21,10 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
-const ShowLabStatus = () => {
+const ShowLabStatus = ({ usableLab }) => {
+  const status = {
+    width: `${usableLab * 7.1}%`,
+  };
   return (
     <FadeIn delay={200}>
       <div className="labstatus_area">
@@ -34,15 +37,15 @@ const ShowLabStatus = () => {
           <div className="useable_area">
             <div className="useable_lab">
               <p className="useable_status">사용 가능 랩실</p>
-              <p className="useable_count">7/14</p>
+              <p className="useable_count">{usableLab}/14</p>
             </div>
             <div className="useable_lab">
               <p className="useable_status">사용중인 랩실</p>
-              <p className="useable_count">7/14</p>
+              <p className="useable_count">{14 - usableLab}/14</p>
             </div>
           </div>
           <div className="unusable_chart">
-            <div className="useable_chart"></div>
+            <div className="useable_chart" style={status}></div>
           </div>
         </div>
         <div className="lab_button_area">
