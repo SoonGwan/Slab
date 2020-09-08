@@ -1,27 +1,27 @@
-.auth_main {
+.register_main {
   display: flex;
   justify-content: space-between;
 }
 
-.auth_area {
+.register_area {
   width: 420px;
   margin: auto;
 }
 
-.auth_title {
+.register_title {
   font-weight: 600;
   font-size: 2rem;
   color: #00244d;
 }
 
-.auth_subtitle {
+.register_subtitle {
   font-weight: 300;
   font-size: 1.2rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 3rem;
   color: #00244d;
 }
 
-.auth_findPwd {
+.register_findPwd {
   font-weight: 300;
   font-size: 0.8rem;
   color: #0077ff;
@@ -34,27 +34,27 @@
   border-color: #f1f1f1;
 }
 
-.auth_register {
+.register_register {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
 }
 
-.auth_account,
-.auth_make_account {
+.register_account,
+.register_make_account {
   font-weight: 300;
   font-size: 1rem;
 }
 
-.auth_account {
+.register_account {
   margin-right: 0.4rem;
 }
 
-.auth_make_account {
+.register_make_account {
   color: #0077ff;
 }
 
-.auth_information {
+.register_information {
   display: flex;
   width: 60rem;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.scss";
+import "./Register.scss";
 
 import { Button, TextField, withStyles } from "@material-ui/core";
 import FadeIn from "react-fade-in";
@@ -11,6 +11,7 @@ const ColorButton = withStyles((theme) => ({
     fontWeight: 300,
     backgroundColor: "#0077FF",
     width: "26rem",
+    marginTop: "2rem",
     marginBottom: "1rem",
     "&:hover": {
       boxShadow: "none",
@@ -22,7 +23,7 @@ const ColorButton = withStyles((theme) => ({
 const CssTextField = withStyles({
   root: {
     width: "26rem",
-    marginTop: "1.6rem",
+    marginBottom: "1.6rem",
     "& label.Mui-focused": {
       color: "#0077FF",
     },
@@ -37,16 +38,26 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
-const Login = ({ setButtonClick }) => {
+const Register = ({ setButtonClick }) => {
   return (
-    <div className="auth_main">
-      <div className="auth_information">
-        <div className="auth_area">
+    <div className="register_main">
+      <div className="register_information">
+        <div className="register_area">
           <FadeIn>
-            <h1 className="auth_title">환영합니다</h1>
-            <h3 className="auth_subtitle">사용 시 로그인을 진행해 주세요.</h3>
+            <h1 className="register_title">Slab, 우리들만의 공간.</h1>
+            <h3 className="register_subtitle">
+              회원가입 후 서비스를 이용하실 수 있습니다.
+            </h3>
             <CssTextField
               label="아이디"
+              variant="outlined"
+              size="small"
+              onChange={(e) => {
+                console.log(e.target.value);
+              }}
+            />
+            <CssTextField
+              label="이메일"
               variant="outlined"
               size="small"
               onChange={(e) => {
@@ -62,20 +73,28 @@ const Login = ({ setButtonClick }) => {
                 console.log(e.target.value);
               }}
             />
-            <h4 className="auth_findPwd">비밀번호를 잊으셨나요?</h4>
+            <CssTextField
+              label="비밀번호 확인"
+              variant="outlined"
+              type="password"
+              size="small"
+              onChange={(e) => {
+                console.log(e.target.value);
+              }}
+            />
             <ColorButton variant="contained" onClick={() => {}}>
-              로그인
+              완료
             </ColorButton>
             <div className="detach_line"></div>
-            <div className="auth_register">
-              <h4 className="auth_account">계정이 없으신가요?</h4>
+            <div className="register_register">
+              <h4 className="register_account">이미 계정이 있으신가요?</h4>
               <h4
-                className="auth_make_account"
+                className="register_make_account"
                 onClick={() => {
-                  setButtonClick(true);
+                  setButtonClick(false);
                 }}
               >
-                가입하기
+                로그인
               </h4>
             </div>
           </FadeIn>
@@ -85,4 +104,4 @@ const Login = ({ setButtonClick }) => {
   );
 };
 
-export default Login;
+export default Register;
