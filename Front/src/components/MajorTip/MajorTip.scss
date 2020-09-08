@@ -1,0 +1,55 @@
+.MajorTip {
+  width: 45rem;
+  height: 31rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  padding: 10px 28px;
+  hr {
+    margin: 10px 0 10px 0;
+  }
+  &-LabTitle {
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 24px;
+    & > * + * {
+      margin-left: 10px;
+    }
+    &-Icon {
+      width: 24px;
+      height: 24px;
+    }
+    &-Title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  &-Title {
+    font-size: 29px;
+    color: #00244d;
+    margin-top: 10px;
+  }
+  &-Lab {
+    width: 41rem;
+    height: 23rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    background-color: rgb(251, 251, 251);
+    padding: 10px;
+
+    &-TableList {
+      padding: 0 10px 0 10px;
+      display: flex;
+      justify-content: space-between;
+
+      &-Item {
+        text-align: center;
+      }
+
+      &-Name {
+        color: #8e8e8e;
+      }
+    }
+  }
+}
