@@ -5,6 +5,7 @@ import ImageSlider from 'components/ImgaeSlider/ImageSlider';
 import ShowLabStatusContainer from 'container/ShowLabStatusContainer/ShowLabStatusContainer';
 import MajorTipContainer from 'container/MajorTipContainer/MajorTipContainer';
 import UserInfoContainer from 'container/UserInfoContainer/UserInfoContainer';
+import MajorTipWriteContainer from 'container/MajorTipContainer/MajorTipWriteContainer';
 const Main = () => {
   return (
     <div className="Main">
@@ -14,6 +15,7 @@ const Main = () => {
         <ImageSlider />
       </div>
       <UserInfoContainer />
+      <MajorTipWriteContainer />
     </div>
   );
 };

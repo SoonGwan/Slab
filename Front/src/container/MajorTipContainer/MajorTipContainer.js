@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
-import MajorTip from "components/MajorTip";
-import useStores from "lib/useStores";
-import { set } from "lodash";
+import React, { useCallback, useEffect, useState } from 'react';
+import MajorTip from 'components/MajorTip';
+import useStores from 'lib/useStores';
+import { set } from 'lodash';
 
 const MajorTipContainer = () => {
   const { store } = useStores();
-  const { handleMajorTip, majorTipList } = store.MajorTipStore;
+  const { handleMajorTip, majorTipList, writeTipModal } = store.MajorTipStore;
   console.log(majorTipList);
 
   const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ const MajorTipContainer = () => {
 
   return (
     <>
-      <MajorTip data={data} />
+      <MajorTip data={data} writeTipModal={writeTipModal} />
     </>
   );
 };

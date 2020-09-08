@@ -1,0 +1,39 @@
+.Modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  &-PostBackGround {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  &-Wrap {
+    padding: 20px;
+    border-radius: 2px;
+    width: 640px;
+    height: 1024px;
+    background-color: white;
+    z-index: 100;
+  }
+  &-Cancel {
+    padding: 4.5px 0px 4.5px 0px;
+    text-align: right;
+  }
+  &-Item {
+    display: flex;
+    flex-direction: column;
+  }
+}
