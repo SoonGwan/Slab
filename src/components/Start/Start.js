@@ -47,7 +47,9 @@ const Start = ({
           requestHandleLogin={requestHandleLogin}
         />
       )}
-      <img src={background} alt={background} className="start_background" />
+      <div className="start_area_img">
+        <img src={background} alt={background} className="start_background" />
+      </div>
     </div>
   );
 };
