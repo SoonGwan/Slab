@@ -20,8 +20,7 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
-const MajorTip = ({ data, writeTipModal }) => {
-  console.log(data);
+const MajorTip = ({ tipList, writeTipModal }) => {
   return (
     <FadeIn delay={300}>
       <div className="MajorTip">
@@ -41,7 +40,7 @@ const MajorTip = ({ data, writeTipModal }) => {
           </ColorButton>
         </div>
         <div className="MajorTip-Lab">
-          {data.map((tip, index) => {
+          {tipList.map((tip, index) => {
             return (
               <>
                 <div className="MajorTip-Lab-TableList">
