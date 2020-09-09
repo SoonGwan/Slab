@@ -4,7 +4,7 @@ import useStores from "lib/useStores";
 
 const ShowLabStatusContainer = () => {
   const { store } = useStores();
-  const { handleLabStatus } = store.ShowLabStatusStore;
+  const { handleLabStatus, selectLabModal } = store.ShowLabStatusStore;
   const [usableLab, setUsableLab] = useState();
 
   const requestHandleLabStatus = useCallback(async () => {
@@ -22,7 +22,7 @@ const ShowLabStatusContainer = () => {
 
   return (
     <>
-      <ShowLabStatus usableLab={usableLab} />
+      <ShowLabStatus usableLab={usableLab} selectLabModal={selectLabModal} />
     </>
   );
 };

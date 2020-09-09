@@ -1,0 +1,25 @@
+.Lab {
+  &-Title {
+    display: flex;
+    align-items: center;
+    margin: 1.8rem 0 0 1.4rem;
+  }
+
+  &-Icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.6rem;
+  }
+
+  &-Sentence {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &-Subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}

@@ -1,11 +1,12 @@
-import React from 'react';
-import './Main.scss';
-import UserInfo from 'components/UserInfo/UserInfo';
-import ImageSlider from 'components/ImgaeSlider/ImageSlider';
-import ShowLabStatusContainer from 'container/ShowLabStatusContainer/ShowLabStatusContainer';
-import MajorTipContainer from 'container/MajorTipContainer/MajorTipContainer';
-import UserInfoContainer from 'container/UserInfoContainer/UserInfoContainer';
-import MajorTipWriteContainer from 'container/MajorTipContainer/MajorTipWriteContainer';
+import React from "react";
+import "./Main.scss";
+import UserInfo from "components/UserInfo/UserInfo";
+import ImageSlider from "components/ImgaeSlider/ImageSlider";
+import ShowLabStatusContainer from "container/ShowLabStatusContainer/ShowLabStatusContainer";
+import MajorTipContainer from "container/MajorTipContainer/MajorTipContainer";
+import UserInfoContainer from "container/UserInfoContainer/UserInfoContainer";
+import MajorTipWriteContainer from "container/MajorTipContainer/MajorTipWriteContainer";
+import SelectLabContainer from "container/ShowLabStatusContainer/SelectLabContainer";
 const Main = () => {
   return (
     <div className="Main">
@@ -16,6 +17,7 @@ const Main = () => {
       </div>
       <UserInfoContainer />
       <MajorTipWriteContainer />
+      <SelectLabContainer />
     </div>
   );
 };

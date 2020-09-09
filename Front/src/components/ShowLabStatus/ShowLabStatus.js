@@ -21,7 +21,7 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 
-const ShowLabStatus = ({ usableLab }) => {
+const ShowLabStatus = ({ usableLab, selectLabModal }) => {
   const status = {
     width: `${usableLab * 7.1}%`,
   };
@@ -49,7 +49,7 @@ const ShowLabStatus = ({ usableLab }) => {
           </div>
         </div>
         <div className="lab_button_area">
-          <ColorButton variant="contained" onClick={() => {}}>
+          <ColorButton variant="contained" onClick={() => selectLabModal()}>
             랩실 신청하기
             <img src={arrow} alt={arrow} />
           </ColorButton>
