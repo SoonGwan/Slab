@@ -25,7 +25,6 @@ const UserInfoContainer = observer(() => {
   const requestHandleUserApplyLab = useCallback(async () => {
     try {
       const response = await handleUserApplyLab();
-      console.log(response);
       return response;
     } catch (error) {
       return error;

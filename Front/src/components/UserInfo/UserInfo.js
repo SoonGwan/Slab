@@ -4,6 +4,7 @@ import pencil from 'assets/images/pencil.svg';
 import money from 'assets/images/money.svg';
 import { DonutChart } from '@opd/g2plot-react';
 import FadeIn from 'react-fade-in';
+import moment from 'moment';
 
 const data = [
   {
@@ -40,7 +41,9 @@ const UserInfo = ({ name, myApplyLabList }) => {
         <div className="UserInfo-Lab-TableList">
           <div className="UserInfo-Lab-TableList-Item">{date}</div>
           <div className="UserInfo-Lab-TableList-Item">{labName}</div>
-          <div className="UserInfo-Lab-TableList-Item">{date + 1}</div>
+          <div className="UserInfo-Lab-TableList-Item">
+            {moment(date).format('YYYY-MM-DD')}
+          </div>
           <div className="UserInfo-Lab-TableList-Item">
             {isHave === '1' ? (
               <span style={{ color: '#3694FF' }}>승인</span>

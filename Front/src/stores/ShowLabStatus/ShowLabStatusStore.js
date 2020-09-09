@@ -1,6 +1,6 @@
-import { action, observable } from "mobx";
-import { autobind } from "core-decorators";
-import ShowLabStatusRepository from "./ShowLabStatusRepository";
+import { action, observable } from 'mobx';
+import { autobind } from 'core-decorators';
+import ShowLabStatusRepository from './ShowLabStatusRepository';
 
 @autobind
 class ShowLabStatusStore {

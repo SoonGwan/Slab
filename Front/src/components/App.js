@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import * as Pages from '../pages';
 import Token from 'lib/Token';
+import 'styles/app.scss';
 const App = () => {
   return (
     <>

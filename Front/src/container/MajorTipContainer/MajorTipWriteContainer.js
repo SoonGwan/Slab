@@ -45,6 +45,7 @@ const MajorTipWriteContainer = observer(() => {
         });
         handleMajorTip();
         writeTipModal();
+        setTitle('');
       }
     } catch (error) {
       return error;
