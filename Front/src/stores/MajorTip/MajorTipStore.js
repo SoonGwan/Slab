@@ -5,10 +5,11 @@ import MajorTipRepository from './MajorTipRepository';
 @autobind
 class MajorTipStore {
   @observable iswriteModal = false;
-
+  @observable tipList = [];
   @action
   async handleMajorTip() {
     const response = await MajorTipRepository.Major();
+    this.tipList = response.data.list;
     return response;
   }
 

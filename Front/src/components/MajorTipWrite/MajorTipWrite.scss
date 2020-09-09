@@ -1,0 +1,53 @@
+.MajorTipWrite {
+  display: flex;
+  flex-direction: column;
+
+  &-WriterWrap {
+    display: flex;
+    &-Writer {
+      width: 70px;
+      font-size: 15px;
+    }
+    & > div > input {
+      width: 100px;
+      height: 30px;
+      background-color: #e4e4e4;
+      border: none;
+      border-radius: 4px;
+      padding: 0px 5px 0px 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    margin-bottom: 12px;
+  }
+  &-TipWrap {
+    display: flex;
+    &-TipTitle {
+      width: 70px;
+      font-size: 15px;
+    }
+    & > div > input {
+      width: 500px;
+      height: 30px;
+      background-color: #e4e4e4;
+      border: none;
+      border-radius: 4px;
+      padding: 0px 5px 0px 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &-TipButton {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    & > button {
+      margin-top: 20px;
+    }
+  }
+}

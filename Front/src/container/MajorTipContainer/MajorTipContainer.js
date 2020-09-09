@@ -2,10 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import MajorTip from 'components/MajorTip';
 import useStores from 'lib/useStores';
 import { set } from 'lodash';
+import { observer } from 'mobx-react';
 
-const MajorTipContainer = () => {
+const MajorTipContainer = observer(() => {
   const { store } = useStores();
-  const { handleMajorTip, majorTipList, writeTipModal } = store.MajorTipStore;
+  const {
+    handleMajorTip,
+    majorTipList,
+    writeTipModal,
+    tipList,
+  } = store.MajorTipStore;
   console.log(majorTipList);
 
   const [data, setData] = useState([]);
@@ -13,7 +19,6 @@ const MajorTipContainer = () => {
   const requestHandleMajorTip = useCallback(async () => {
     try {
       const response = await handleMajorTip();
-      setData(response.data.list);
     } catch (error) {
       return error;
     }
@@ -25,9 +30,9 @@ const MajorTipContainer = () => {
 
   return (
     <>
-      <MajorTip data={data} writeTipModal={writeTipModal} />
+      <MajorTip tipList={tipList} writeTipModal={writeTipModal} />
     </>
   );
-};
+});
 
 export default MajorTipContainer;
