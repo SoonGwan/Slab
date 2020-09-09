@@ -42,7 +42,7 @@ const UserInfo = ({ name, myApplyLabList }) => {
           <div className="UserInfo-Lab-TableList-Item">{date}</div>
           <div className="UserInfo-Lab-TableList-Item">{labName}</div>
           <div className="UserInfo-Lab-TableList-Item">
-            {moment(date).format('YYYY-MM-DD')}
+            {moment(date).add(7, 'd').format('YYYY-MM-DD')}
           </div>
           <div className="UserInfo-Lab-TableList-Item">
             {isHave === '1' ? (
