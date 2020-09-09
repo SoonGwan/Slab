@@ -7,6 +7,7 @@ import MajorTipContainer from "container/MajorTipContainer/MajorTipContainer";
 import UserInfoContainer from "container/UserInfoContainer/UserInfoContainer";
 import MajorTipWriteContainer from "container/MajorTipContainer/MajorTipWriteContainer";
 import SelectLabContainer from "container/ShowLabStatusContainer/SelectLabContainer";
+
 const Main = () => {
   return (
     <div className="Main">
