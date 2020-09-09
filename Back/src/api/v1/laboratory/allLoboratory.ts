@@ -1,26 +1,26 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
-import Major from '../../../entity/Major';
+import Laboratory from '../../../entity/Laboratory';
 import logger from '../../../lib/logger';
 
 export default async (req: Request, res: Response) => {
   try {
-    const majorList = getRepository(Major);
-    const list = await majorList.find({
+    const laboratoryList = getRepository(Laboratory);
+    const list = await laboratoryList.find({
       order: {
         idx: 'DESC',
       },
     });
-    console.log(list);
-    logger.green('전공 리스트 조회 성공');
+    logger.green('랩실 조회 성공');
     res.status(200).json({
       status: 200,
-      message: '전공 리스트 조회성공',
+      message: '랩실 조회 성공',
       data: {
         list,
       },
     });
   } catch (error) {
-    logger.red('전공 리스트 조회중 올ㅍ', error.message);
+    logger.red('랩실 조회중 오류 발생', error.message);
+    return error;
   }
 };
