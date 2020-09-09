@@ -112,6 +112,7 @@ const Register = ({
                 onClick={() => {
                   setButtonClick(false);
                 }}
+                style={{ cursor: 'pointer' }}
               >
                 로그인
               </h4>

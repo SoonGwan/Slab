@@ -82,6 +82,7 @@ const Login = ({
                 onClick={() => {
                   setButtonClick(true);
                 }}
+                style={{ cursor: 'pointer' }}
               >
                 가입하기
               </h4>
