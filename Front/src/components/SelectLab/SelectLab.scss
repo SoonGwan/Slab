@@ -1,8 +1,10 @@
 .Lab {
+  padding: 10px;
+
   &-Title {
     display: flex;
     align-items: center;
-    margin: 1.8rem 0 0 1.4rem;
+    margin-bottom: 0.6rem;
   }
 
   &-Icon {
@@ -19,7 +21,54 @@
 
   &-Subtitle {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
+  }
+
+  &-Status {
+    display: flex;
+    margin-top: 1.2rem;
+
+    & > img {
+      margin-right: 0.4rem;
+    }
+
+    & > h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0;
+      margin-right: 2rem;
+    }
+  }
+
+  &-List {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 60px 0px;
+    margin-top: 5rem;
+
+    justify-items: center;
+
+    &-Item {
+      cursor: pointer;
+      width: 130px;
+      height: 180px;
+      border-radius: 1rem;
+      background-color: #3694ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > h3 {
+        color: #ffffff;
+      }
+    }
+  }
+
+  &-Button {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
   }
 }

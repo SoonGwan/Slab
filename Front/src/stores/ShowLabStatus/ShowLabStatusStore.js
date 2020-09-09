@@ -4,7 +4,7 @@ import ShowLabStatusRepository from "./ShowLabStatusRepository";
 
 @autobind
 class ShowLabStatusStore {
-  @observable isSelectModal = true;
+  @observable isSelectModal = false;
 
   @action
   selectLabModal() {
